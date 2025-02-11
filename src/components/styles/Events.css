@@ -1,0 +1,61 @@
+section {
+  background-color: #041e23;
+  border: 1pt solid #0e464f;
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.heading-and-progressbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  height: 5px;
+  background-color: #0e464f;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.progress-bar-fill {
+  background-color: #24a0b5;
+  padding: inherit;
+  width: 33.3%;
+  border-radius: 5px 0 0 5px;
+}
+
+.event-details-container {
+  background-color: #08252b;
+  border: 1pt solid #0e464f;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.detail-one {
+  text-align: center;
+  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail-one h2 {
+  font-size: 30px;
+}
+
+.location-and-date {
+  display: flex;
+  gap: 7px;
+}

@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  background-color: #05252c9c;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1pt solid #197686;
+}
+
+.logoContainer img {
+  width: 75px;
+  height: auto;
+}
+
+ul {
+  display: flex;
+  gap: 25px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.link-item {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  padding: 10px;
+  border-radius: 7px;
+  font-family: inherit;
+  background-color: #fff;
+  color: #05252c;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
