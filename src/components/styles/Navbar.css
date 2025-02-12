@@ -36,7 +36,7 @@ li {
   color: #fff;
 }
 
-button {
+.navbar button {
   padding: 10px;
   border-radius: 7px;
   font-family: inherit;
@@ -48,4 +48,14 @@ button {
   gap: 10px;
   align-items: center;
   cursor: pointer;
+}
+
+@media screen and (max-width:625px){
+  nav{
+    display: none;
+  }
+
+  .navbar{
+    width: 90%;
+  }
 }

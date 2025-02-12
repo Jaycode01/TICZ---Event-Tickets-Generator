@@ -3,8 +3,8 @@ section {
   border: 1pt solid #0e464f;
   width: 50%;
   margin: 50px auto;
-  padding: 20px;
-  border-radius: 15px;
+  padding: 50px 25px;
+  border-radius: 20px;
   color: #fff;
 }
 
@@ -39,16 +39,23 @@ section {
   background-color: #08252b;
   border: 1pt solid #0e464f;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   margin-top: 30px;
 }
 
 .detail-one {
   text-align: center;
-  padding: 0 20%;
+  padding: 30px 20%;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  background: linear-gradient(to right, #249fb55d, #249fb500);
+  background-color: #0a0c1142;
+  border: 1pt solid #07373f;
+  border-radius: 20px;
 }
 
 .detail-one h2 {
@@ -58,4 +65,175 @@ section {
 .location-and-date {
   display: flex;
   gap: 7px;
+  font-size: 13px;
+  margin: 0 auto;
+}
+
+hr{
+  border: 2px solid #07373F;
+}
+
+.ticket-type-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #052228;
+  margin-top: 20px;
+  border: 1pt solid #07373F;
+  padding: 15px;
+  border-radius: 15px;
+  gap: 30px;
+}
+
+.ticket-type-one, .ticket-type-two, .ticket-type-three{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: space-between;
+  width: 250px;
+  border: 1pt solid #07373F;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.ticket-type-one.active, .ticket-type-two.active, .ticket-type-three.active{
+  background-color: #197686;
+  border: 1pt solid #197686;
+}
+
+.ticket-name-and-sitleft{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ticket-name-and-sitleft p:first-child{
+  text-transform: uppercase;
+}
+
+.ticket-cost{
+  background-color: #0E464F;
+  border: 1pt solid #2BA4B9;
+  height: fit-content;
+  width: 60px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.ticket-cost p{
+  text-align: right;
+  color: #fff;
+}
+
+.first-ending-process{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.number-of-ticket-input{
+  display: flex;
+  flex-direction: row;
+}
+
+.number-of-ticket-input select{
+  width: 100%;
+  border: 1pt solid #07373F;
+  background-color: inherit;
+  padding: 10px;
+  padding-right: 10px;
+  outline: none;
+  border-radius: 10px;
+  font-family: inherit;
+  color: #fff;
+}
+
+.decision-btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1pt solid #0E464F;
+  border-radius: 50px;
+  background-color: #041E23;
+  gap: 15px;
+}
+
+.decision-btns button{
+  width: 150px;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1pt solid #24A0B5;
+}
+
+.decision-btns button:first-child{
+  background-color: #041E23;
+  color: #24A0B5;
+}
+
+.decision-btns button:nth-child(2){
+  background-color: #24A0B5;
+  color: #fff;
+}
+
+@media screen and (max-width:625px){
+  section{
+    width: 90%;
+  }
+
+  .heading h1{
+    font-size: 20px;
+  }
+
+  .heading p{
+    font-size:  15px;
+  }
+
+  .event-details-container{
+    padding: 10px;
+  }
+
+  .detail-one{
+    padding: 20px;
+  }
+
+  .detail-one h2{
+    font-size: 25px;
+  }
+
+  .location-and-date{
+    flex-direction: column;
+  }
+
+  h3{
+    font-size: 17px;
+  }
+
+  .ticket-type-container{
+    gap: 15px;
+  }
+
+  .ticket-type-one, .ticket-type-two, .ticket-type-three{
+    margin: 0 auto;
+  }
+
+  .decision-btns{
+    flex-direction: column-reverse;
+    border: none;
+  }
+
+  .decision-btns button{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width:450px){
+  .detail-one h2{
+    font-size: 22px;
+  }
+
+  .detail-one .event-description{
+    font-size: 14px;
+  }
 }
