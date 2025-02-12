@@ -1,13 +1,12 @@
 import React from "react";
-import {useState} from 'react'
+import { useState } from "react";
 import "./styles/Events.css";
-import { FaAngleDown } from "react-icons/fa6";
 
-const Events = () => {
+const Events = ({ step, setStep }) => {
   const [selected, setSelected] = useState(null);
 
   const handleClick = (index) => {
-    setSelected(index); 
+    setSelected(index);
   };
 
   return (
@@ -15,7 +14,7 @@ const Events = () => {
       <div className="heading-and-progressbar">
         <div className="heading">
           <h1>Ticket Selection</h1>
-          <p>Step 1/3</p>
+          <p>Step {step}/3</p>
         </div>
         <div className="progress-bar">
           <span className="progress-bar-fill"></span>
@@ -37,8 +36,10 @@ const Events = () => {
         <div>
           <h3>Select Ticket Type:</h3>
           <div className="ticket-type-container">
-            <div className={`ticket-type-one ${selected === 1 ? 'active' : ''}`}
-        onClick={() => handleClick(1)}>
+            <div
+              className={`ticket-type-one ${selected === 1 ? "active" : ""}`}
+              onClick={() => handleClick(1)}
+            >
               <div className="ticket-name-and-sitleft">
                 <p>regular access</p>
                 <p>30 left</p>
@@ -47,9 +48,11 @@ const Events = () => {
                 <p>FREE</p>
               </div>
             </div>
-            <div className={`ticket-type-two ${selected === 2 ? 'active' : ''}`}
-        onClick={() => handleClick(2)}>
-            <div className="ticket-name-and-sitleft">
+            <div
+              className={`ticket-type-two ${selected === 2 ? "active" : ""}`}
+              onClick={() => handleClick(2)}
+            >
+              <div className="ticket-name-and-sitleft">
                 <p>VIP access</p>
                 <p>50 left</p>
               </div>
@@ -57,9 +60,11 @@ const Events = () => {
                 <p>$150</p>
               </div>
             </div>
-            <div className={`ticket-type-three ${selected === 3 ? 'active' : ''}`}
-        onClick={() => handleClick(3)}>
-            <div className="ticket-name-and-sitleft">
+            <div
+              className={`ticket-type-three ${selected === 3 ? "active" : ""}`}
+              onClick={() => handleClick(3)}
+            >
+              <div className="ticket-name-and-sitleft">
                 <p>VVIP access</p>
                 <p>70 left</p>
               </div>
@@ -92,7 +97,7 @@ const Events = () => {
           </div>
           <div className="decision-btns">
             <button>Cancel</button>
-            <button>Next</button>
+            <button onClick={() => setStep(2)}>Next</button>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Events from "./Events";
 
 const TicketProcess = () => {
   const [step, setStep] = useState(1);
@@ -7,8 +8,8 @@ const TicketProcess = () => {
     <div>
       {step === 1 && (
         <div>
-          <h1>First Content</h1>
-          <button onClick={() => setStep(2)}>Next</button>
+          <Events step={step} setStep={setStep} />
+          {/* <button onClick={() => setStep(2)}>Next</button> */}
         </div>
       )}
 
