@@ -15,7 +15,7 @@ const AttendeeDetails = () => {
         </div>
       </div>
 
-      {/* Form to get Attendee Details */}
+     
       <div className="attendee-details-form">
         <div className="upload-image-container"></div>
         <div className="input-details-container">
