@@ -1,7 +1,7 @@
 import React from "react";
 
 const Tickets = () => {
-  return <div>My Tickets</div>;
+  return <div></div>;
 };
 
 export default Tickets;
